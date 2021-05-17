@@ -207,3 +207,8 @@ font-family: 'Open Sans', sans-serif;
   font-weight: 800;
   font-size: 3em;
 }
+#s1-3-left {
+  position: absolute;
+  top: 3vh;
+  left: 201.5vw;
+}

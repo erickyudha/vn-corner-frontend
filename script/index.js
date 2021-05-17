@@ -1,7 +1,7 @@
 new fullpage('#fullpage', {
   navigation: true,
   responsiveWidth: 700,
-  anchors: ['reccomendation', 'about-us', 'contact'],
+  anchors: ['recommendation', 'discover', 'music', 'quotes', 'about'],
   parallax: true,
   controlArrows: false,
   sectionsColor: ['#FFF', '#FFF', '#FFF', '#FFF'],
