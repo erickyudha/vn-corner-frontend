@@ -108,11 +108,6 @@ font-family: 'Open Sans', sans-serif;
   right: 202vw;
   font-size: 1.4em;
 }
-#s1-1-right-label {
-  position: absolute;
-  right: 105.5vw;
-  bottom: 8vh;
-}
 
 #s1-2-bg {
   position: absolute;
@@ -126,19 +121,89 @@ font-family: 'Open Sans', sans-serif;
 }
 #s1-2-content {
   z-index: 1;
-  background-color: rgba(0, 0, 0, 0.303);
+  background-color: rgba(0, 0, 0, 0.618);
   position: absolute;
   left: 100vw;
   top: 0;
   height: 100vh;
   width: 50vw;
+  padding: 30px;
 }
 #s1-2-title {
-  position: absolute;
   top: 10vh;
-  left: 4vw;
-  z-index: 1;
+  left: 3vw;
+  z-index: 2;
   font-weight: 600;
   color: #83cafa;
   font-size: 1.6em;
+  padding: 0;
+  margin: 0;
+}
+#s1-2-title-jp {
+  font-family: 'Kosugi Maru', sans-serif;
+  color: #dcc831;
+  font-size: 1.2em;
+}
+#synopsis-text {
+  color: #fff;
+  font-family: 'Dancing Script', cursive;
+  padding: 0;
+  margin: 8px 0 4px 0;
+}
+#synopsis-wrapper {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 0.8em;
+  padding: 0;
+  margin: 0;
+  overflow-wrap: break-word;
+  white-space: pre-line;
+}
+#s1-2-right {
+  color: white;
+  font-size: 1.4em;
+}
+
+#s1-3-line {
+  user-select: none;
+  z-index: 0;
+}
+#s1-3-content {
+  z-index: 1;
+  top: 0;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+}
+#s1-3-main {
+  background-color: #53cef8;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  width: 100vw;
+  height: fit-content;
+  position: absolute;
+  top: 20vh;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+}
+#s1-3-main iframe {
+  width: 80vh;
+  height: 45vh;
+  margin: auto;
+}
+#memory-text {
+  color: #53cef8;
+  position: absolute;
+  top: 14vh;
+  left: 210vw;
+  font-weight: 600;
+  font-size: 1.7em;
+}
+#op-text {
+  color: #53cef8;
+  position: absolute;
+  right: 8vw;
+  bottom: 18vh;
+  font-weight: 800;
+  font-size: 3em;
 }
