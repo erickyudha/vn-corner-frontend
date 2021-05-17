@@ -152,11 +152,14 @@ font-family: 'Open Sans', sans-serif;
 }
 #synopsis-wrapper {
   color: rgba(255, 255, 255, 0.8);
-  font-size: 0.8em;
+  font-size: 0.78em;
   padding: 0;
   margin: 0;
   overflow-wrap: break-word;
   white-space: pre-line;
+}
+#synopsis-wrapper p {
+  font-family: 'Open Sans', sans-serif;
 }
 #s1-2-right {
   color: white;
@@ -211,4 +214,41 @@ font-family: 'Open Sans', sans-serif;
   position: absolute;
   top: 3vh;
   left: 201.5vw;
+}
+
+#discover-main {
+  height: 100vh;
+  padding: 8vh 4vw;
+}
+#discover-img-wrapper {
+  position: relative;
+  text-align: center;
+  color: #ffffff;
+}
+#discover-img-wrapper img {
+  object-fit: cover;
+  width: 92vw;
+  height: 84vh;
+  z-index: 0;
+  user-select: none;
+}
+#discover-img-wrapper h1 {
+  z-index: 1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'Dancing Script', cursive;
+  font-weight: 800;
+  font-size: 4em;
+}
+#s2-1-right {
+  z-index: 1;
+  position: absolute;
+  top: 43%;
+  right: 5%;
+}
+#s2-1-right svg {
+  width: 64px;
+  height: auto;
 }
