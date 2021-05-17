@@ -252,3 +252,48 @@ font-family: 'Open Sans', sans-serif;
   width: 64px;
   height: auto;
 }
+
+
+.s2-wrapper {
+  z-index: 0;
+  position: relative;
+  height: 100vh;
+  user-select: none;
+}
+#gc-b {
+  position: absolute;
+  bottom: 8%;
+  left: 50%;
+  width: 22vw;
+} 
+#gc-lt {
+  position: absolute;
+  top: 15%;
+  left: 10%;
+  width: 22vw;
+}
+#triangle-lb {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 40vh;
+}
+#box-c {
+  position: absolute;
+  top: 10%;
+  left: 45%;
+  width: 7vw;
+}
+#box-rb {
+  width: 35vw;
+  position: absolute;
+  right: 0;
+  bottom: 5%;
+}
+
+.s2-vn-img {
+  position: absolute;
+  left: 10%;
+  top: 19%;
+  width: 20vw;
+}
