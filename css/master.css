@@ -50,10 +50,10 @@ font-family: 'Open Sans', sans-serif;
 #rec-title {
   position: absolute;
   top: 24vh;
-  right: 4.5vw;
+  right: 204.5vw;
   z-index: 1;
   font-weight: 600;
-  color: #c1e6ff;
+  color: #83cafa;
   font-size: 1.6em;
   padding: 3px 10px 3px 10px;
   background-color: rgba(0, 0, 0, 0.6);
@@ -62,20 +62,12 @@ font-family: 'Open Sans', sans-serif;
   z-index: 1;
   position: absolute;
   font-family: 'Kosugi Maru', sans-serif;
-  color: #f2b10dbf;
-  font-size: 1.3em;
-  top: 29vh;
-  right: 105vw;
-  font-weight: 800;
-}
-#title-small {
-  z-index: 1;
-  position: absolute;
-  color: #3db1ff;
-  font-family: 'Dancing Script', cursive;
-  font-size: 1.3em;
-  bottom: 10vh;
-  left: 3vw;
+  color: #dcc831;
+  font-size: 1.2em;
+  top: 31vh;
+  right: 204.5vw;
+  padding: 3px 10px 3px 10px;
+  background-color: rgba(0, 0, 0, 0.6);
 }
 #rec1-line {
   height: 1px;
@@ -93,6 +85,60 @@ font-family: 'Open Sans', sans-serif;
   font-size: 1em;
   background-color: rgba(0, 0, 0, 0.5);
   padding: 3px 10px 3px 10px;
-  right: 101vw;
+  right: 201vw;
   bottom: 18vh;
+}
+
+.fp-custom-arrow {
+  background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+.fp-custom-arrow svg {
+  width: 32px;
+  height: auto;
+}
+#s1-1-right {
+  position: absolute;
+  bottom: 9vh;
+  right: 202vw;
+  font-size: 1.4em;
+}
+#s1-1-right-label {
+  position: absolute;
+  right: 105.5vw;
+  bottom: 8vh;
+}
+
+#s1-2-bg {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  top: 0;
+  left: 100vw;
+  z-index: 0;
+  user-select: none;
+}
+#s1-2-content {
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.303);
+  position: absolute;
+  left: 100vw;
+  top: 0;
+  height: 100vh;
+  width: 50vw;
+}
+#s1-2-title {
+  position: absolute;
+  top: 10vh;
+  left: 4vw;
+  z-index: 1;
+  font-weight: 600;
+  color: #83cafa;
+  font-size: 1.6em;
 }
