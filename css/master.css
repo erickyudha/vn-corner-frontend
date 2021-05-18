@@ -263,12 +263,12 @@ font-family: 'Open Sans', sans-serif;
 #gc-b {
   position: absolute;
   bottom: 8%;
-  left: 50%;
-  width: 22vw;
+  left: 20%;
+  width: 18vw;
 } 
 #gc-lt {
   position: absolute;
-  top: 15%;
+  top: 12%;
   left: 10%;
   width: 22vw;
 }
@@ -287,8 +287,8 @@ font-family: 'Open Sans', sans-serif;
 
 .s2-vn-img {
   position: absolute;
-  right: 74%;
-  top: 18%;
+  right: 70%;
+  top: 15%;
   width: 20vw;
 }
 .disc-vn-info {
@@ -298,7 +298,7 @@ font-family: 'Open Sans', sans-serif;
   width: 50%;
   position: absolute;
   left: 35%;
-  top: 14%;
+  top: 12%;
   align-items: start;
   column-gap: 0;
   row-gap: -1px;
@@ -334,4 +334,9 @@ font-family: 'Open Sans', sans-serif;
 }
 .disc-vn-info h2:first-of-type {
   font-weight: 800;
+}
+.vn-info-nav-btn {
+  position: absolute;
+  right: 20px;
+  top: 20px;
 }
