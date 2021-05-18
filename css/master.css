@@ -385,3 +385,32 @@ font-family: 'Open Sans', sans-serif;
   top: 82%;
   right: 40px;
 }
+
+.quote-content {
+  display: grid;
+  grid-template-rows: 25% auto 10% 7% 10% 5%;
+  height: 100vh;
+  margin-left: 20%;
+  margin-right: 20%;
+  justify-items: center;
+  align-items: start;
+  user-select: text;
+}
+#quote-text {
+  font-size: 1.75em;
+  color: #af069d;
+  align-self: center;
+}
+#from-text {
+  font-family: 'Dancing Script', cursive;
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 1.8em;
+}
+#quote-vn-name {
+  font-weight: 800;
+}
+#quote-content-btn {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
