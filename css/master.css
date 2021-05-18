@@ -278,12 +278,6 @@ font-family: 'Open Sans', sans-serif;
   left: 0;
   height: 40vh;
 }
-#box-c {
-  position: absolute;
-  top: 10%;
-  left: 45%;
-  width: 7vw;
-}
 #box-rb {
   width: 35vw;
   position: absolute;
@@ -293,7 +287,51 @@ font-family: 'Open Sans', sans-serif;
 
 .s2-vn-img {
   position: absolute;
-  left: 10%;
-  top: 19%;
+  right: 74%;
+  top: 18%;
   width: 20vw;
+}
+.disc-vn-info {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: auto;
+  width: 50%;
+  position: absolute;
+  left: 35%;
+  top: 14%;
+  align-items: start;
+  column-gap: 0;
+  row-gap: -1px;
+  user-select: text;
+}
+.disc-vn-header h1 {
+  text-align: right;
+  margin-right: 10px;
+  margin-left: 40px;
+  font-weight: 800;
+  font-size: 1.4em;
+  color: #fff;
+}
+#disc-vn-info-synopsis-header {
+  margin-bottom: 100px;
+}
+.disc-vn-header {
+  margin: 0 20px; 
+  background-color: #53cef8;
+  border: solid #53cef8 3px;
+}
+.disc-vn-body {
+  font-size: 1.2em;
+  margin-top: 4px;
+}
+.disc-vn-synopsis {
+  font-family: 'Open Sans', sans-serif;
+  margin-top: 9px;
+  font-size: 0.75em;
+}
+#disc-original-title {
+  font-family: 'Kosugi Maru', sans-serif;
+}
+.disc-vn-info h2:first-of-type {
+  font-weight: 800;
 }
