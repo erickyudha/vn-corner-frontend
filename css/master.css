@@ -254,7 +254,7 @@ font-family: 'Open Sans', sans-serif;
 }
 
 
-.s2-wrapper {
+.box-wrapper {
   z-index: 0;
   position: relative;
   height: 100vh;
@@ -339,4 +339,49 @@ font-family: 'Open Sans', sans-serif;
   position: absolute;
   right: 20px;
   top: 20px;
+}
+
+#msc-bg-cg {
+  position: absolute;
+  top: 12%;
+  right: 20%;
+  width: 30vw;
+}
+.music-frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -65%);
+  width: 92vh;
+  height: 51.75vh;
+}
+#kanji-music {
+  font-family: 'Kosugi Maru', sans-serif;
+  color: #7b54a6;
+  font-weight: 800;
+  position: absolute;
+  bottom: 20%;
+  left: 80px;
+  font-size: 4em;
+}
+#music-line {
+  position: absolute;
+  left: 0;
+  bottom: 20%;
+  height: 10px;
+  width: 100vw;
+  background-color: #7b54a6;
+}
+#text-music {
+  position: absolute;
+  color: #7f629e;
+  font-weight: 800;
+  top: 78%;
+  left: 130px;
+  font-size: 4em;
+}
+.music-nav-btn {
+  position: absolute;
+  top: 82%;
+  right: 40px;
 }
