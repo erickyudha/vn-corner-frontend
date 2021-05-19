@@ -400,6 +400,7 @@ font-family: 'Open Sans', sans-serif;
   font-size: 1.75em;
   color: #af069d;
   align-self: center;
+  text-align: center;
 }
 #from-text {
   font-family: 'Dancing Script', cursive;
@@ -408,6 +409,7 @@ font-family: 'Open Sans', sans-serif;
 }
 #quote-vn-name {
   font-weight: 800;
+  text-align: center;
 }
 #quote-content-btn {
   position: absolute;
