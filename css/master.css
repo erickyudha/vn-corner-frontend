@@ -9,6 +9,16 @@ font-family: 'Open Sans', sans-serif;
   margin-left: 8vw;
   margin-right: 8vw;
 }
+
+spoiler {
+  background-color: #000;
+  color: #000;
+}
+spoiler:hover {
+  color: #212529;
+  background-color: transparent;
+}
+
 .navbar {
   width: 100vw;
   position: absolute;
@@ -298,7 +308,7 @@ font-family: 'Open Sans', sans-serif;
   width: 50%;
   position: absolute;
   left: 35%;
-  top: 12%;
+  top: 9%;
   align-items: start;
   column-gap: 0;
   row-gap: -1px;
@@ -328,6 +338,7 @@ font-family: 'Open Sans', sans-serif;
   font-family: 'Open Sans', sans-serif;
   margin-top: 9px;
   font-size: 0.75em;
+  white-space: pre-line;
 }
 #disc-original-title {
   font-family: 'Kosugi Maru', sans-serif;
