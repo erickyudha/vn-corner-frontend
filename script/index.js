@@ -2,7 +2,7 @@
 const config =
 {
   api_url: 'https://vncorner.herokuapp.com',
-  new_vn: [6438, 21192, 17743, 13105, 24351, 29066],
+  new_vn: [6438, 21192, 17743, 13105, 24351, 29066, 18778],
   music: ['DAvUseXorzU', 'rUL35Lge1ds'],
   reccomendation: {
     id: 18778,
@@ -17,7 +17,10 @@ api-url = Backend URL, make sure there is no '/' at the end
 music = list for adding music slides, to add more just add
   more youtube video id, example:
   https://www.youtube.com/watch?v={THIS IS YOUTUBE VIDEO ID}
-
+recommendation = VN Data for recommendation section,
+  id: VNDB id,
+  pic1 and pic2: image link,
+  op: op movie youtube id
 */
 //-------------------------------------------------
 // CONST LIST
@@ -93,66 +96,6 @@ const musicLoader = musicArray => {
   });
 };
 
-/* const discoverVnLoader = async vnArray => {
-  
-  vnArray.forEach(async vnId => {
-    let vnData = await fetchVnById(vnId);
-    let synopsis = vnData.description;
-    tagOriginal.forEach((key, index) => {
-      synopsis = synopsis.replaceAll(key, tagNew[index]);
-    });
-    let template = 
-    `
-    <div class="slide">
-            <div class="box-wrapper container-fluid">
-              <img src="img/s2-content-bg/gc-b.svg" draggable="false" id="gc-b" alt="">
-              <img src="img/s2-content-bg/gc-lt.svg" draggable="false" id="gc-lt" alt="">
-              <img src="img/s2-content-bg/box-rb.svg" draggable="false" id="box-rb" alt="">
-              <img src="img/s2-content-bg/triangle-lb.svg" draggable="false" id="triangle-lb" alt="">
-              <img src="${vnData.image}" class="s2-vn-img" alt="">
-              <div class="disc-vn-info">
-                <div class="disc-vn-header">
-                  <h1>title</h1>
-                </div>
-                <h2 class="disc-vn-body">${vnData.title}</h2>
-                <div  class="disc-vn-header">
-                  <h1>original</h1>
-                </div>
-                <h2 class="disc-vn-body" id="disc-original-title">${vnData.original}</h2>
-                <div class="disc-vn-header">
-                  <h1>
-                    length
-                  </h1>
-                </div>
-                <h2 class="disc-vn-body">${vnData.length}</h2>
-                <div class="disc-vn-header">
-                  <h1>release</h1>
-                </div>
-                <h2 class="disc-vn-body">${vnData.released}</h2>
-                <div class="disc-vn-header">
-                  <h1 id="disc-vn-info-synopsis-header">synopsis</h1>
-                </div>
-                <h2 class="disc-vn-synopsis">${synopsis}</h2>
-              </div>
-              <div class="vn-info-nav-btn">
-                <button class="fp-custom-arrow left" onclick="fullpage_api.moveSlideLeft()">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#53cef8" class="bi bi-arrow-left-circle" viewBox="0 0 16 16">
-                    <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-4.5-.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5z"/>
-                  </svg>
-                </button>
-                <button class="fp-custom-arrow right" onclick="fullpage_api.moveSlideRight()">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#53cef8" class="bi bi-arrow-right-circle" viewBox="0 0 16 16">
-                    <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
-                  </svg>
-                </button>
-              </div>
-            </div>
-          </div>
-    `;
-    document.getElementById('discover-section').innerHTML += template;
-    console.log('Load page sucess');
-  });
-}; */
 const templateVN = id => {
   return new Promise( async (resolve, reject) => {
     try {
@@ -235,7 +178,7 @@ const loadDiscover = vnArray => {
 const loadFullpage = () => {
   new fullpage('#fullpage', {
     navigation: true,
-    responsiveWidth: 700,
+    responsiveWidth: 600,
     anchors: ['recommendation', 'discover', 'music', 'quotes', 'about'],
     parallax: true,
     controlArrows: false,
@@ -259,6 +202,11 @@ const loadRec = async recData => {
   document.getElementById('rec-title-jp').innerHTML = vnData.original;
   document.getElementById('rec-pic1').src = recData.pic1;
   document.getElementById('rec-vndb-link').innerHTML = `vndb.org/v${id}`;
+  document.getElementById('s1-2-bg').src = recData.pic2;
+  document.getElementById('s1-2-title').innerHTML = vnData.title;
+  document.getElementById('s1-2-title-jp').innerHTML = vnData.original;
+  document.getElementById('synopsis-rec').innerHTML = synopsis;
+  document.getElementById('s1-3-main').innerHTML = `<iframe width="853" height="480" src="https://www.youtube.com/embed/${recData.op}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`  
 };
 
 

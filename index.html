@@ -28,7 +28,7 @@
     <div id="fullpage">
       <div class="section">
         <div class="slide">
-          <div class="container-fluid">
+          <div class="box-wrapper container-fluid">
             <nav class="navbar navbar-expand-lg navbar-light">
               <div class="container-fluid" id="navbar-container">
                 <a class="navbar-brand" href="#">
@@ -43,9 +43,6 @@
                     <li class="nav-item">
                       <a class="nav-link active" aria-current="page" href="#">Home</a>
                     </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">Link</a>
-                    </li>
                     <li class="nav-item dropdown">
                       <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         Browse VN
@@ -55,15 +52,18 @@
                         <li><a class="dropdown-item" href="#">By Publisher</a></li> 
                       </ul>
                     </li> 
+                    <li class="nav-item">
+                      <a class="nav-link disabled" href="#">Details</a>
+                    </li>
+                    
                   </ul>
                   <form class="d-flex search-btn" method="GET" action="search.html">
                     <input class="form-control me-2" type="search" name="name" placeholder="Search VN" aria-label="Search">
-                    <button class="btn btn-outline-success " type="submit">Search</button>
+                    <button class="btn btn-primary" type="submit">Search</button>
                   </form>
                 </div>
               </div>
-            </nav>
-            
+            </nav>  
             <div class="container-fluid rec1">
               <h2 id="rec-text">- n e w&nbsp;&nbsp;r e c o m m e n d a t i o n .</h2>
               <div class="rec-sub-top container-fluid">
@@ -84,28 +84,15 @@
             </div>
           </div>
         </div>
-
         <div class="slide" data-anchor="synopsis">
           <div class="box-wrapper container-fluid">
-            <img id="s1-2-bg" draggable="false" src="img/einstein3.avif" alt="">
+            <img id="s1-2-bg" draggable="false" alt="">
             <div class="container-fluid" id="s1-2-content">
               <h1 id="s1-2-title">Einstein Yori Ai o Komete</h1>
               <h2 id="s1-2-title-jp">アインシュタインより愛を込めて</h2>
               <h3 id="synopsis-text">synopsis</h3>
               <div id="synopsis-wrapper">
-                <p>"They say I'm a guy who doesn't understand human emotions at all. \n" +
-                  'But really, who actually does? \n' +
-                  '\n' +
-                  'The start of summer: \n' +
-                  'Aiuchi Shuuta, a second year at Hokumakidai Academy, is the smartest student in his grade. However, he loses this title for the first time.\n' +
-                  "A girl, Arimura Romi, climbed her way to the top, while continuing to publish cutting-edge research papers online. She's a very mysterious girl: the textbook definition of an enigma. \n" +
-                  '\n' +
-                  "And thus, Shuuta seeks Romi's help on a certain matter.\n" +
-                  '\n' +
-                  '"Aiuchi Shuuta" and "Arimura Romi" \n' +
-                  'It all started from the meeting of these two geniuses-- a distant summer adventure begins.\n' +
-                  '\n' +
-                  '[Translated from the [url=https://glovety.product.co.jp/]official site[/url]]',</p>
+                <p id="synopsis-rec"></p>
               </div>
               <button class="fp-custom-arrow left" onclick="fullpage_api.moveSlideLeft()">
                 <svg style="fill: white;" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left-circle-fill" viewBox="0 0 16 16">
@@ -121,8 +108,6 @@
             </div>
           </div>
         </div>
-
-
         <div class="slide" data-anchor="op">
           <div class="box-wrapper container-fluid">
             <div id="s1-3-content container-fluid">
@@ -132,28 +117,13 @@
                   <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-4.5-.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5z"/>
                 </svg>
               </button>
-              <h1 id="memory-text">
-                - m e m o r i e s .
-              </h1>
-              <div class="container-fluid" id="s1-3-main">
-                <iframe width="853" height="480" src="https://www.youtube.com/embed/_X7FEyjUjb8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-              </div>
-              <h2 id="op-text">
-                OPENING MOVIE
-              </h2>
-  
+              <h1 id="memory-text">- m e m o r i e s .</h1>
+              <div class="container-fluid" id="s1-3-main"></div>
+              <h2 id="op-text">OPENING MOVIE</h2>
             </div>
           </div>
-
         </div>
-        
-        
-
       </div>
-
-
-
-
       <div class="section" id="discover-section" onload="loadFullpage()">
           <div class="slide">
             <div class="container-fluid" id="discover-main">
@@ -172,7 +142,6 @@
             </div>
           </div>
       </div>
-
       <div class="section" id="music-section">
         <div class="slide">
           <div class="container-fluid" id="discover-main">
@@ -190,7 +159,6 @@
           </div>
         </div>
       </div>
-
       <div class="section">
         <div class="slide">
 

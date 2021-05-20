@@ -32,10 +32,6 @@ spoiler:hover {
   display: flex;
   align-items: center;
 }
-.search-btn button {
-  border: solid 1px rgba(48, 178, 218, 0.6);
-  color: rgba(48, 178, 218, 0.6);
-}
 
 .rec1 img {
   position: absolute;
@@ -60,7 +56,7 @@ spoiler:hover {
 #rec-title {
   position: absolute;
   top: 24vh;
-  right: 204.5vw;
+  right: 4.5vw;
   z-index: 1;
   font-weight: 600;
   color: #83cafa;
@@ -75,7 +71,7 @@ spoiler:hover {
   color: #dcc831;
   font-size: 1.2em;
   top: 31vh;
-  right: 204.5vw;
+  right: 4.5vw;
   padding: 3px 10px 3px 10px;
   background-color: rgba(0, 0, 0, 0.6);
 }
@@ -95,7 +91,7 @@ spoiler:hover {
   font-size: 1em;
   background-color: rgba(0, 0, 0, 0.5);
   padding: 3px 10px 3px 10px;
-  right: 201vw;
+  right: 1vw;
   bottom: 18vh;
 }
 
@@ -115,7 +111,7 @@ spoiler:hover {
 #s1-1-right {
   position: absolute;
   bottom: 9vh;
-  right: 202vw;
+  right: 2vw;
   font-size: 1.4em;
 }
 
@@ -138,6 +134,7 @@ spoiler:hover {
   height: 100vh;
   width: 50vw;
   padding: 30px;
+  user-select: text;
 }
 #s1-2-title {
   top: 10vh;
@@ -170,6 +167,7 @@ spoiler:hover {
 }
 #synopsis-wrapper p {
   font-family: 'Open Sans', sans-serif;
+  font-size: 0.95em;
 }
 #s1-2-right {
   color: white;
@@ -224,8 +222,8 @@ spoiler:hover {
 }
 #s1-3-left {
   position: absolute;
-  top: 3vh;
-  left: 201.5vw;
+  top: 20px;
+  left: 20px;
 }
 
 #discover-main {
