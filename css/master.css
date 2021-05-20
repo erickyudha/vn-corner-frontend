@@ -125,7 +125,7 @@ spoiler:hover {
   height: 100vh;
   object-fit: cover;
   top: 0;
-  left: 100vw;
+  left: 0;
   z-index: 0;
   user-select: none;
 }
@@ -133,7 +133,7 @@ spoiler:hover {
   z-index: 1;
   background-color: rgba(0, 0, 0, 0.618);
   position: absolute;
-  left: 100vw;
+  left: 0;
   top: 0;
   height: 100vh;
   width: 50vw;
@@ -194,21 +194,23 @@ spoiler:hover {
   width: 100vw;
   height: fit-content;
   position: absolute;
-  top: 20vh;
-  display: flex;
-  align-items: center;
-  justify-items: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -58%);
 }
 #s1-3-main iframe {
   width: 80vh;
   height: 45vh;
   margin: auto;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
 }
 #memory-text {
   color: #53cef8;
   position: absolute;
   top: 14vh;
-  left: 210vw;
+  left: 10vw;
   font-weight: 600;
   font-size: 1.7em;
 }
