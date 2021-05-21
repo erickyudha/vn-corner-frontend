@@ -1,28 +1,3 @@
-// Config File -- EDIT HERE! --
-const config =
-{
-  api_url: 'https://vncorner.herokuapp.com',
-  new_vn: [6438, 21192, 17743, 13105, 24351, 29066, 18778],
-  music: ['DAvUseXorzU', 'rUL35Lge1ds'],
-  reccomendation: {
-    id: 18778,
-    pic1: "https://i.ibb.co/5Kbjpkp/image.png",
-    pic2: "https://i.ibb.co/mvGCFfB/image.png",
-    op: 'XIzZdeEnMJM',
-  },
-};
-/*
-Config Notes:
-api-url = Backend URL, make sure there is no '/' at the end
-music = list for adding music slides, to add more just add
-  more youtube video id, example:
-  https://www.youtube.com/watch?v={THIS IS YOUTUBE VIDEO ID}
-recommendation = VN Data for recommendation section,
-  id: VNDB id,
-  pic1 and pic2: image link,
-  op: op movie youtube id
-*/
-//-------------------------------------------------
 // CONST LIST
 const tagOriginal = [
   '[SPOILER]',
@@ -192,7 +167,6 @@ const loadFullpage = () => {
 const loadRec = async recData => {
   const id = recData.id;
   const vnData = await fetchVnById(id);
-  console.log(vnData);
   let synopsis = vnData.description;
   tagOriginal.forEach((key, index) => {
     synopsis = synopsis.replaceAll(key, tagNew[index]);

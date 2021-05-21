@@ -1,0 +1,61 @@
+/*
+font-family: 'Dancing Script', cursive;
+font-family: 'Kosugi Maru', sans-serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Open Sans', sans-serif;
+*/
+.navbar {
+  z-index: 2;
+  top: 0;
+  left: 0;
+  font-size: 1em;
+}
+.navbar-brand {
+  display: flex;
+  align-items: center;
+}
+#navbar-container {
+  margin-left: 8vw;
+  margin-right: 8vw;
+}
+.details-content {
+  margin-left: 8vw;
+  margin-right: 8vw;
+  padding: 0;
+  padding-top: 40px;
+}
+.details-img img {
+  object-fit: contain;
+  max-width: 100%;
+  margin-bottom: 20px;
+
+}
+.vn-info h1 {
+  font-size: 1.2em;
+  margin-bottom: 0;
+}
+.vn-info h2 {
+  margin-bottom: 15px;
+  font-weight: 600;
+  font-size: 1.6em;
+}
+.vn-info h3 {
+  font-size: 1em;
+  white-space: pre-line;
+  margin-bottom: 100px;
+}
+
+#ori-title {
+  font-family: 'Kosugi Maru', sans-serif;
+}
+#aliases {
+  white-space: pre-line;
+}
+spoiler {
+  background-color: #000;
+  color: #000;
+}
+spoiler:hover {
+  color: #212529;
+  background-color: transparent;
+}
