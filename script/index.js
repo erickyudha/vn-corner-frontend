@@ -38,8 +38,11 @@ const fetchVnById = async id => {
 // LOADER FUNCTION
 const randomQuoteLoader = async () => {
   const data = await fetchQuote();
-  document.getElementById('quote-vn-name').innerHTML = data.title;
-  document.getElementById('quote-text').innerHTML = data.quote;
+  const vnName = document.getElementById('quote-vn-name');
+  const vnQuote = document.getElementById('quote-text');
+
+  vnName.innerHTML = data.title;
+  vnQuote.innerHTML = data.quote;
 };
 const musicLoader = musicArray => {
   musicArray.forEach(music => {
@@ -150,20 +153,6 @@ const loadDiscover = vnArray => {
     });
 };
 
-const loadFullpage = () => {
-  new fullpage('#fullpage', {
-    navigation: true,
-    responsiveWidth: 600,
-    anchors: ['recommendation', 'discover', 'music', 'quotes', 'about'],
-    parallax: true,
-    controlArrows: false,
-    sectionsColor: ['#FFF', '#FFF', '#FFF', '#FFF'],
-    onLeave: function(origin, destination, direction){
-        console.log("Leaving section" + origin.index);
-    },
-  });
-}
-
 const loadRec = async recData => {
   const id = recData.id;
   const vnData = await fetchVnById(id);
@@ -183,7 +172,18 @@ const loadRec = async recData => {
   document.getElementById('s1-3-main').innerHTML = `<iframe width="853" height="480" src="https://www.youtube.com/embed/${recData.op}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`  
 };
 
-
+const loadFullpage = () => {
+  new fullpage('#fullpage', {
+    navigation: true,
+    responsiveWidth: 400,
+    anchors: ['recommendation', 'discover', 'music', 'quotes'],
+    controlArrows: false,
+    sectionsColor: ['#FFF', '#FFF', '#FFF', '#FFF'],
+    onLeave: function(origin, destination, direction){
+        console.log("Leaving section" + origin.index);
+    },
+  });
+}
 
 //---------------------------------------------------
 // INIT FUNCTION

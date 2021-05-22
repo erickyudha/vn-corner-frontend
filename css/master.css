@@ -51,8 +51,6 @@ spoiler:hover {
   font-size: 1.2em;
   font-weight: 200;
 }
-
-
 #rec-title {
   position: absolute;
   top: 24vh;
@@ -426,4 +424,21 @@ spoiler:hover {
   position: absolute;
   top: 20px;
   left: 20px;
+}
+
+.fadein-up {
+  animation-name: fadein-up;
+  animation-timing-function: ease-in-out;
+  animation-duration: 1.2s;
+}
+
+@keyframes fadein-up {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translate(0);
+  }
 }
