@@ -2,8 +2,8 @@
 const config =
 {
   api_url: 'https://vncorner.herokuapp.com',
-  new_vn: [24351, 14265, 19829, 24987],
-  music: ['CqQUwb9JCfc', 'xLIVk0JSKeY', '8XFcAVtc1F4'],
+  new_vn: [16516, 24351, 14265, 19829, 24987],
+  music: ['ktOpWwiTFMI','CqQUwb9JCfc', 'xLIVk0JSKeY', '8XFcAVtc1F4'],
   reccomendation: {
     id: 18778,
     pic1: "https://i.ibb.co/5Kbjpkp/image.png",

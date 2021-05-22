@@ -13,6 +13,7 @@ const fetchVnByName = async name => {
 
 const loadSearchResult = async name => {
   document.getElementById('search-name').innerHTML = name;
+  document.getElementById('page-title').innerHTML = `You searched for "${name}" - VN Corner`;
   try {
     const searchData = await fetchVnByName(name);
     console.log(searchData);
@@ -27,7 +28,6 @@ const loadSearchResult = async name => {
         </div>
       </a>
       </li>`;
-      console.log(template);
       document.getElementById('search-content').innerHTML += template;
     });
   } catch (error) {
